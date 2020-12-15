@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat</title>
+    <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script> <!--install that to create connection on client side-->
+    <link rel="stylesheet" href="style.css" > <!--link css file to html-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/> 
+
+</head>
+<body onload="alerts()">
+        <div id="chat-container">
+            <h2>Live Chat</h2>
+            <div id="chat-window">
+                <div id="feedback">
+                </div>
+                <div id="output"></div>
+            </div>
+            <input  type="text" id="name"  placeholder="Your name" required>
+            <input  type="text" id="message"  placeholder="Your message" required>
+            <button id="send">Send</button>
+        </div>
+        <script src="chat.js"></script>               <!--link client js to html-->
+        <script>
+            function alerts(){
+                alert("This chat is not secure! Do not reveal any sensitive information or use real names.");
+            }
+        </script>
+</body>
+</html>
