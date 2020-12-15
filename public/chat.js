@@ -1,4 +1,4 @@
-const sockety=io.connect('http://jasonndao.github.io'); //client socket(need to change link when publishing website)
+const sockety=io.connect('http://livechatjnd.herokuapp.com'); //client socket(need to change link when publishing website)
 
 //get stuff on websites
 var nameof=document.getElementById('name');
