@@ -6,9 +6,10 @@ const app=express();            //create app using express
 app.use(express.static('public'));//use public folder for html etc
 
 //SERVER
-const server=app.listen(4000, function() {          //listen to port 4000, and if open, prints function, and allows connection to website
+const server=app.listen( process.env.PORT || 4000, function() {          //listen to port 4000, and if open, prints function, and allows connection to website
     console.log("Server started on port 4000")
 })
+
 
 //CONNECTION
 const io=sockety(server); 
