@@ -1,4 +1,4 @@
-const sockety=io.connect('http://livechatjnd.herokuapp.com/socket.io/?EIO=4&transport=websocket'); //client socket(need to change link when publishing website)
+const sockety=io.connect(); //client socket(need to change link when publishing website)
 
 //get stuff on websites
 var nameof=document.getElementById('name');
